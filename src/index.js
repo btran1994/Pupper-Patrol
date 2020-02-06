@@ -33,7 +33,7 @@ document.addEventListener("DOMContentLoaded", function () {
             1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1,
             1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1,
             1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1
-            
+
         ],
         getTile: function (col, row) {
             return this.tiles[row * map.cols + col]
@@ -43,7 +43,7 @@ document.addEventListener("DOMContentLoaded", function () {
     drawMap()
 
     let doggo = new Doggo({
-        speed:  5, //pixels moved per animation frame
+        speed: 5, //pixels moved per animation frame
         positionX: 600, //x position of character
         positionY: 300, //y position of character
         dirDown: 0,
@@ -53,13 +53,13 @@ document.addEventListener("DOMContentLoaded", function () {
         direction: 0,
         sprite: image
     }
-)
+    )
 
     function drawMap() {
         for (let c = 0; c < map.cols; c++) {
             for (let r = 0; r < map.rows; r++) {
                 let tile = map.getTile(c, r);
-                if (tile === 1) { 
+                if (tile === 1) {
                     obj.drawImage(background, 81, 255, 30, 30, c * 100, r * 80 - 30, 100, 100)
                 }
                 if (tile === 2) {
@@ -146,4 +146,3 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 })
 
-   
