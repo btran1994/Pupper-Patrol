@@ -1,0 +1,29 @@
+{
+  "name": "pupper-patrol",
+  "version": "1.0.0",
+  "description": "Javascript/HTML5/Canvas top down rpg",
+  "main": "index.js",
+  "dependencies": {
+    "babel-loader": "^8.0.6",
+    "gh-pages": "^2.2.0",
+    "webpack": "^4.41.5",
+    "webpack-cli": "^3.3.10"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack --watch --mode=development",
+    "gh": "gh-pages -d dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/btran1994/pupper-patrol.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/btran1994/pupper-patrol/issues"
+  },
+  "homepage": "https://github.com/btran1994/pupper-patrol#readme"
+}
